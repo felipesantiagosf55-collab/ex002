@@ -1,0 +1,59 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html body {
+    min-height: 100vh; /* 100% da altura do site*/
+    background-color: darkgray;
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+header > h1 {
+    padding-top: 50px; /*50px em cima da escrita Cordel Moderno*/
+    font-variant: small-caps; /*Letras maiusculos mas o "c" e o "m" ficam miores do que as demais, se eu quise-se que todas as letras ficassem maiuscolas eu usaria o seguinte comando "text-transform: uppercase;"*/
+}
+header > p {
+    padding-bottom: 50px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding-top: 10vh; /*10% da altura da minha tela*/
+    padding-bottom: 10vh;
+    line-height: 2em; /*Espaçamento entre as frases*/
+    padding-left: 30px;
+}
+section.normal {
+    background-color: white;
+    color: black;
+}
+section.imagem {
+    background-color: rgb(103, 103, 103);
+    color: white;
+}
+section.imagem > p {
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.451);
+}
+
+footer {
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
