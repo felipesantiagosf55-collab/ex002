@@ -52,6 +52,9 @@ section {
     font-family: var(--fonte3);
     font-size: 3.5vw; /*5% da largura da tela, para que o texto vá se alto ajustando*/
 }
+section > p {
+    padding-bottom: 2em;
+}
 section.normal {
     background-color: white;
     color: black;
@@ -64,6 +67,12 @@ section.imagem > p {
     display: inline-block; /*Cria uma caixa que se adapta ao tamanho do conteudo*/
     padding: 5px;
     background-color: rgba(0, 0, 0, 0.451);
+}
+section#img01 {
+    background-image: url('../imagens/._background001.jpg');
+}
+section#img02 {
+    
 }
 
 footer {
