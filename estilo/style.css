@@ -62,17 +62,33 @@ section.normal {
 section.imagem {
     background-color: rgb(103, 103, 103);
     color: white;
+    box-shadow: inset 0px 0px 10px black; /*Sombra interna, para que o texto fique mais legivel*/
+    background-size: cover; /*A imagem de fundo se ajusta ao tamanho da seção, sem distorcer a imagem*/
+    background-attachment: fixed; /*A imagem de fundo fica fixa, mesmo quando o usuário rola a página, criando um efeito de paralaxe*/
+    
+    
 }
 section.imagem > p {
     display: inline-block; /*Cria uma caixa que se adapta ao tamanho do conteudo*/
     padding: 5px;
     background-color: rgba(0, 0, 0, 0.451);
+    text-shadow: 1px 1px 1px black;
 }
 section#img01 {
-    background-image: url('../imagens/baleia.jfif');
+    background-image: url('../imagens/paisagem.jpg');
 }
 section#img02 {
-    
+    background-image: url('../imagens/passaro.jpg');
+}
+
+@media screen and (min-width: 600px) {
+    /*diminui o tamanho do texto para telas maiores*/
+    header > h1 {
+        font-size: 5vw;
+    }
+    section {
+        font-size: 2vw;
+    }    
 }
 
 footer {
